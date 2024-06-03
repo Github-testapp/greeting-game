@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>挨拶ゲーム</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="game-container">
+        <form name="form1" method="post" action="">
+            <p align="center">
+                <input type="text" name="namae"><br>
+                <span>名前を入力してね</span><br><br>
+                <span id="output"></span><br><br>
+                <img id="greet-image" src="./img/image1.jpg" alt="Greet Image" style="width: 300px; height: 300px;">
+            </p>
+            <p align="center">
+                <input type="button" value="挨拶する" onclick="getName()" />
+                <input type="button" value="次へ" onclick="nextImage()" />
+                <input type="button" value="リフレッシュ" onclick="resetForm()" />
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
